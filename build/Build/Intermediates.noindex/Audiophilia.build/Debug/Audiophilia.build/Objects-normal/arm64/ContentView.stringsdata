@@ -1,0 +1,720 @@
+{
+  "source": "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Playback Error",
+        "location": {
+          "startingColumn": 13,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Audiophilia",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to Library",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "LIBRARY",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "PLAYLISTS",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEVICES",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scanning library…",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 260
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Playlist",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 399
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose a cover image (optional)",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 436
+        }
+      },
+      {
+        "comment": "",
+        "key": "Playlist name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 439
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Cover",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 420
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 448
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 453
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 511
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %lld Hz",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 542
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toggle Mini Player",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 633
+        }
+      },
+      {
+        "comment": "",
+        "key": "Search",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 585
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear search",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 602
+        }
+      },
+      {
+        "comment": "",
+        "key": "No matches found for “%@”",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 767
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Results",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 765
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 847
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 879
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOSSLESS",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 967
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 1025
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOSSLESS",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 1086
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 1069
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 1159
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add folders to build your local library",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 1190
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Music Folders",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 1188
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks · %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 1274
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 1249
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add music files to this folder to see them here",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 1414
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back to folders",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 1319
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Tracks in this Folder",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 1412
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 1309
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Fullscreen Player",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 1362
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 1370
+        }
+      },
+      {
+        "comment": "",
+        "key": "·",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 1371
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOSSLESS",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 1526
+        }
+      },
+      {
+        "comment": "",
+        "key": "Press the + button to make a new playlist",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 1599
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Playlists Yet",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 1597
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add music from files or folders to get started",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 1823
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Tracks in this Playlist",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 1821
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Fullscreen Player",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 1687
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld tracks",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 1695
+        }
+      },
+      {
+        "comment": "",
+        "key": "·",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 1696
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld songs",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 1981
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 1943
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 2023
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEFAULT",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 2014
+        }
+      },
+      {
+        "comment": "",
+        "key": "Active",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 2056
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 2056
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toggle Now Playing",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 2253
+        }
+      },
+      {
+        "comment": "",
+        "key": "Toggle shuffle",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 2272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Previous track",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 2287
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play / Pause",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 2309
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next track",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 2324
+        }
+      },
+      {
+        "comment": "",
+        "key": "·",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 2336
+        }
+      },
+      {
+        "comment": "",
+        "key": "BIT-PERFECT",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 2350
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 2353
+        }
+      },
+      {
+        "comment": "",
+        "key": "· %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 2356
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOSSLESS",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 2495
+        }
+      },
+      {
+        "comment": "",
+        "key": "MOVE TO PLAYLIST",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 2612
+        }
+      },
+      {
+        "comment": "",
+        "key": "COPY TO PLAYLIST",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 2628
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2723
+        }
+      },
+      {
+        "comment": "",
+        "key": "Play Next",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2728
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to Queue",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2732
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to Playlist",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 2740
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Playlist from Track…",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 2752
+        }
+      },
+      {
+        "comment": "",
+        "key": "Move to Playlist",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 2763
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copy to Playlist",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 2775
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove from Playlist",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 2784
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove from Library",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 2794
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show in Finder",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2802
+        }
+      },
+      {
+        "comment": "",
+        "key": "Song Info…",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2806
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show in Albums",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2813
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show in Artists",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 2821
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Playlist from Track…",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 2747
+        }
+      },
+      {
+        "comment": "",
+        "key": "Collapse Fullscreen Player",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 3071
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 3052
+        }
+      },
+      {
+        "comment": "",
+        "key": "· %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 3084
+        }
+      },
+      {
+        "comment": "",
+        "key": "· %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 3088
+        }
+      },
+      {
+        "comment": "",
+        "key": "BIT-PERFECT",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 3080
+        }
+      },
+      {
+        "comment": "",
+        "key": "RESAMPLED",
+        "location": {
+          "startingColumn": 77,
+          "startingLine": 3080
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOSSLESS",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 3145
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 3170
+        }
+      }
+    ]
+  },
+  "version": 1
+}

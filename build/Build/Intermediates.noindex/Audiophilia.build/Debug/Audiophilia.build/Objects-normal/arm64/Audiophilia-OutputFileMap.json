@@ -1,0 +1,139 @@
+{
+  "" : {
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Audiophilia-primary.dia",
+    "emit-module-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Audiophilia-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Audiophilia-primary-emit-module.dia",
+    "pch" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Audiophilia-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Audiophilia-primary.swiftdeps"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Audio/AudioEngine.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudioEngine~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Audio/FormatParsers.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/FormatParsers~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Audio/MetadataExtractor.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MetadataExtractor~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/AudiophiliaApp.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/AudiophiliaApp~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/ContentView.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Library/LibraryManager.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/LibraryManager~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Models/PlayerState.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/PlayerState~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Models/Playlist.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Playlist~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Models/ThemeManager.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/ThemeManager~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Models/Track.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/Track~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/Views/SettingsView.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/Audiophilia/WindowManagement/MiniPlayerPanelController.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/MiniPlayerPanelController~partial.swiftmodule"
+  },
+  "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/navatej/Developer/Applications/Audiophilia/build/Build/Intermediates.noindex/Audiophilia.build/Debug/Audiophilia.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
