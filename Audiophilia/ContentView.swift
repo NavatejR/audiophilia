@@ -10,6 +10,32 @@ import UniformTypeIdentifiers
 /// instant without springs, bounces, or overshoot.
 let MicroEase = Animation.easeOut(duration: 0.12)
 
+// MARK: - Artwork Placeholder
+
+/// Temporary cover shown when a track/album/playlist has no artwork.
+/// Renders the active theme's gradient with a subdued note so a missing
+/// cover never reads as a broken image (replaces one-off music.note-on-tint).
+struct ArtworkPlaceholderView: View {
+    @EnvironmentObject private var theme: ThemeManager
+
+    var cornerRadius: CGFloat = 12
+    var noteSize: CGFloat = 18
+
+    var body: some View {
+        LinearGradient(
+            colors: [theme.theme.topGradient, theme.theme.bottomGradient],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+        .overlay {
+            Image(systemName: "music.note")
+                .font(.system(size: noteSize, weight: .light))
+                .foregroundStyle(.white.opacity(0.55))
+        }
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+    }
+}
+
 // MARK: - Content View
 
 struct ContentView: View {
@@ -60,6 +86,10 @@ struct ContentView: View {
         // Fullscreen player presentation is handled by its own `.transition(.opacity)`
         // inside the overlay; no root re-layout animation on expand/collapse.
         .animation(nil, value: playerState.isNowPlayingExpanded)
+        // Respect the user's appearance preference (System/Light/Dark).
+        // The window stays opaque + theme-painted regardless; this drives the
+        // frosted materials, controls, and text to the right palette.
+        .preferredColorScheme(theme.appearance.colorScheme)
         // Fullscreen player overlay — replaces the entire app UI
         .overlay {
             if playerState.isNowPlayingExpanded {
@@ -207,14 +237,8 @@ struct SidebarView: View {
                                                 .frame(width: 20, height: 20)
                                                 .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
                                         } else {
-                                            RoundedRectangle(cornerRadius: 5, style: .continuous)
-                                                .fill(Color.accentColor.opacity(0.2))
+                                            ArtworkPlaceholderView(cornerRadius: 5, noteSize: 9)
                                                 .frame(width: 20, height: 20)
-                                                .overlay {
-                                                    Image(systemName: "music.note")
-                                                        .font(.system(size: 9))
-                                                        .foregroundStyle(.secondary)
-                                                }
                                         }
                                     }
                                     Text(playlist.name)
@@ -1488,14 +1512,8 @@ struct FolderTrackRow: View, Equatable {
                         .frame(width: 44, height: 44)
                         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 } else {
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .fill(Color.accentColor.opacity(0.2))
+                    ArtworkPlaceholderView(cornerRadius: 8, noteSize: 14)
                         .frame(width: 44, height: 44)
-                        .overlay {
-                            Image(systemName: "music.note")
-                                .font(.system(size: 14))
-                                .foregroundStyle(.secondary)
-                        }
                 }
 
                 // Playing badge overlay
@@ -2223,14 +2241,8 @@ struct FloatingPlaybar: View {
                                 .frame(width: 44, height: 44)
                                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                         } else {
-                            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .fill(Color.accentColor.opacity(0.2))
+                            ArtworkPlaceholderView(cornerRadius: 10, noteSize: 16)
                                 .frame(width: 44, height: 44)
-                                .overlay {
-                                    Image(systemName: "music.note")
-                                        .font(.system(size: 16))
-                                        .foregroundStyle(.secondary)
-                                }
                         }
                     }
                     .overlay(
@@ -2457,14 +2469,8 @@ struct PlaylistTrackRow: View, Equatable {
                         .frame(width: 44, height: 44)
                         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 } else {
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .fill(Color.accentColor.opacity(0.2))
+                    ArtworkPlaceholderView(cornerRadius: 8, noteSize: 14)
                         .frame(width: 44, height: 44)
-                        .overlay {
-                            Image(systemName: "music.note")
-                                .font(.system(size: 14))
-                                .foregroundStyle(.secondary)
-                        }
                 }
 
                 // Playing badge overlay
@@ -3021,6 +3027,7 @@ struct FullscreenPlayer: View {
     @EnvironmentObject private var audioEngine: AudioEngine
     @EnvironmentObject private var library: LibraryManager
     @EnvironmentObject private var playerState: PlayerState
+    @Environment(\.colorScheme) private var colorScheme
 
     @State private var isBackHovering = false
 
@@ -3031,11 +3038,19 @@ struct FullscreenPlayer: View {
         ZStack {
             // One gradient layer, one GPU blend. Colors morph smoothly when
             // the off-thread artwork extraction lands. No layers, no crossfade.
-            LinearGradient(
-                colors: gradientColors,
-                startPoint: .top,
-                endPoint: .bottom
-            )
+            ZStack {
+                LinearGradient(
+                    colors: gradientColors,
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                // Ease the eyes in dark appearance — a soft black veil over the
+                // artwork palette so bright covers don't glare in dark mode.
+                if colorScheme == .dark {
+                    Color.black.opacity(0.24)
+                        .allowsHitTesting(false)
+                }
+            }
             .drawingGroup()
             .ignoresSafeArea()
             .animation(.easeInOut(duration: 0.6), value: gradientColors)
@@ -3120,20 +3135,8 @@ struct FullscreenPlayer: View {
                                     )
                                     .shadow(color: .black.opacity(0.4), radius: 40, y: 16)
                             } else {
-                                RoundedRectangle(cornerRadius: 30, style: .continuous)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [Color.accentColor.opacity(0.4), Color.accentColor.opacity(0.1)],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        )
-                                    )
+                                ArtworkPlaceholderView(cornerRadius: 30, noteSize: 80)
                                     .frame(width: 340, height: 340)
-                                    .overlay {
-                                        Image(systemName: "music.note")
-                                            .font(.system(size: 80, weight: .light))
-                                            .foregroundStyle(.white.opacity(0.5))
-                                    }
                                     .shadow(color: .black.opacity(0.4), radius: 40, y: 16)
                             }
 

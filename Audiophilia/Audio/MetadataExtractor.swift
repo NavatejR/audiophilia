@@ -67,6 +67,11 @@ nonisolated enum MetadataExtractor {
 
     /// Extracts and caches embedded artwork to the app's cache directory.
     /// Returns the cached file path, or nil if no artwork is found.
+    ///
+    /// JPEG is preferred (keeps the legacy `<trackID>.jpg` cache layout), but
+    /// if the re-encode fails — e.g. artwork with an alpha channel that the
+    /// JPEG encoder rejects — we fall back to writing a PNG instead of
+    /// silently dropping the cover, which would show the placeholder note.
     @discardableResult
     nonisolated static func extractArtwork(from url: URL, trackID: UUID) -> String? {
         let cacheDir = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
@@ -79,13 +84,23 @@ nonisolated enum MetadataExtractor {
             return destPath
         }
 
-        guard let data = extractArtworkData(from: url),
-              let jpegData = convertToJPEG(data) else {
-            return nil
+        guard let data = extractArtworkData(from: url) else { return nil }
+
+        // Standard path — preferred JPEG cache file.
+        if let jpegData = convertToJPEG(data) {
+            try? jpegData.write(to: URL(fileURLWithPath: destPath))
+            return destPath
         }
 
-        try? jpegData.write(to: URL(fileURLWithPath: destPath))
-        return destPath
+        // Fallback — re-encode as PNG (lossless, alpha-safe) so the cover
+        // still shows instead of the placeholder note.
+        let pngPath = cacheDir.appendingPathComponent("\(trackID.uuidString).png").path
+        if let pngData = convertToPNG(data) {
+            try? pngData.write(to: URL(fileURLWithPath: pngPath))
+            return pngPath
+        }
+
+        return nil
     }
 
     /// Converts raw image data to JPEG using pure CoreGraphics (no NSImage main-actor hop).
@@ -97,6 +112,20 @@ nonisolated enum MetadataExtractor {
         guard let destination = CGImageDestinationCreateWithData(output, UTType.jpeg.identifier as CFString, 1, nil) else { return nil }
 
         CGImageDestinationAddImage(destination, image, [kCGImageDestinationLossyCompressionQuality: 0.9] as CFDictionary)
+        guard CGImageDestinationFinalize(destination) else { return nil }
+        return output as Data
+    }
+
+    /// Converts raw image data to PNG using pure CoreGraphics (alpha-safe
+    /// fallback for covers the JPEG encoder rejects).
+    nonisolated private static func convertToPNG(_ data: Data) -> Data? {
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil),
+              let image = CGImageSourceCreateImageAtIndex(source, 0, nil) else { return nil }
+
+        let output = NSMutableData()
+        guard let destination = CGImageDestinationCreateWithData(output, UTType.png.identifier as CFString, 1, nil) else { return nil }
+
+        CGImageDestinationAddImage(destination, image, nil)
         guard CGImageDestinationFinalize(destination) else { return nil }
         return output as Data
     }

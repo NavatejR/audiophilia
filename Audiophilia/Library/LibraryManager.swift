@@ -134,6 +134,7 @@ final class LibraryManager: ObservableObject {
 
         loadLibrary()
         restoreFolderAccess()
+        reconcileArtwork()
     }
 
     // MARK: - Folder Management
@@ -645,6 +646,50 @@ final class LibraryManager: ObservableObject {
     }
 
     // MARK: - Artwork
+
+    /// Re-establishes cached cover art that is missing or was evicted.
+    ///
+    /// `artworkPath` values are persisted in `library.json`, but macOS may
+    /// purge `~/Library/Caches/AudiophiliaArtwork` between launches. Without
+    /// this pass, every cover silently drops back to the placeholder note.
+    /// Runs off the main thread; each cached file that still exists is skipped
+    /// (an expensive re-read of every track on launch is avoided).
+    func reconcileArtwork() {
+        let snapshotTracks = tracks
+        guard !snapshotTracks.isEmpty else { return }
+
+        Task.detached(priority: .utility) { [weak self] in
+            guard let self = self else { return }
+
+            var updates: [UUID: String] = [:]
+            for track in snapshotTracks {
+                if let path = track.artworkPath, FileManager.default.fileExists(atPath: path) {
+                    continue
+                }
+                if let newPath = MetadataExtractor.extractArtwork(from: track.url, trackID: track.id) {
+                    updates[track.id] = newPath
+                }
+            }
+            guard !updates.isEmpty else { return }
+
+            await MainActor.run {
+                self.applyArtworkUpdates(updates)
+            }
+        }
+    }
+
+    /// Applies re-extracted artwork paths to the in-memory library.
+    private func applyArtworkUpdates(_ updates: [UUID: String]) {
+        var updated = tracks
+        var changed = false
+        for index in updated.indices where updates[updated[index].id] != nil {
+            updated[index].artworkPath = updates[updated[index].id]
+            changed = true
+        }
+        guard changed else { return }
+        tracks = updated
+        saveLibrary()
+    }
 
     /// Cached artwork images keyed by file path.
     ///

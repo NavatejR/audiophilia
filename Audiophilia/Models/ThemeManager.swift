@@ -39,6 +39,27 @@ enum GlassIntensity: String, CaseIterable, Identifiable {
     }
 }
 
+// MARK: - Appearance Style
+
+/// The app's color scheme. `.system` follows the macOS appearance setting;
+/// Light and Dark force a scheme regardless of the OS setting.
+enum AppearanceStyle: String, CaseIterable, Identifiable {
+    case system = "System"
+    case light = "Light"
+    case dark = "Dark"
+
+    var id: String { rawValue }
+
+    /// Resolves to a SwiftUI `ColorScheme`, or `nil` when following the system.
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system: return nil
+        case .light: return .light
+        case .dark: return .dark
+        }
+    }
+}
+
 // MARK: - Theme Preset
 
 /// A complete Liquid Glass color theme. Exposes accent + gradient colors
@@ -273,6 +294,10 @@ final class ThemeManager: ObservableObject {
         didSet { objectWillChange.send() }
     }
 
+    @AppStorage("appearanceRaw") var appearanceRaw: String = AppearanceStyle.system.rawValue {
+        didSet { objectWillChange.send() }
+    }
+
     @AppStorage("defaultSectionRaw") var defaultSectionRaw: String = LibrarySection.albums.rawValue {
         didSet { objectWillChange.send() }
     }
@@ -312,6 +337,11 @@ final class ThemeManager: ObservableObject {
     /// The currently selected glass intensity.
     var glass: GlassIntensity {
         GlassIntensity(rawValue: glassIntensityRaw) ?? .thin
+    }
+
+    /// The currently selected color scheme (System / Light / Dark).
+    var appearance: AppearanceStyle {
+        AppearanceStyle(rawValue: appearanceRaw) ?? .system
     }
 
     /// The default section shown on launch.

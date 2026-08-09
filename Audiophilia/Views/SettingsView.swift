@@ -84,6 +84,20 @@ struct SettingsView: View {
                     }
                 }
 
+                // Appearance — System / Light / Dark
+                Text("Appearance")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundStyle(.secondary)
+
+                Picker("Appearance", selection: $theme.appearanceRaw) {
+                    ForEach(AppearanceStyle.allCases) { style in
+                        Text(style.rawValue).tag(style.rawValue)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .labelsHidden()
+                .frame(maxWidth: 300)
+
                 // Glass intensity
                 Text("Glass Intensity")
                     .font(.system(size: 12, weight: .medium))
