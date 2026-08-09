@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Audiophilia' in project 'Audiophilia' (no dependencies)
